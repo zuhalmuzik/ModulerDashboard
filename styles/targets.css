@@ -1,0 +1,101 @@
+/* Target Tracking Styles */
+
+.target-section {
+    background: #f8f9fa;
+    padding: 30px;
+    border-radius: 15px;
+    margin-bottom: 30px;
+}
+
+.target-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.target-card {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.target-card h3 {
+    font-size: 1.2em;
+    color: #495057;
+    margin-bottom: 15px;
+}
+
+.target-input {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #dee2e6;
+    border-radius: 8px;
+    font-size: 1.1em;
+    margin-bottom: 15px;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 30px;
+    background: #e9ecef;
+    border-radius: 15px;
+    overflow: hidden;
+    margin: 15px 0;
+}
+
+.progress-fill {
+    height: 100%;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    transition: width 0.5s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: 600;
+}
+
+.target-stats {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.target-stat {
+    background: #f8f9fa;
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.target-stat label {
+    font-size: 0.85em;
+    color: #6c757d;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.target-stat value {
+    font-size: 1.3em;
+    font-weight: 700;
+    color: #212529;
+}
+
+/* Mobile Responsive Styles */
+@media (max-width: 768px) {
+    .target-section {
+        padding: 15px;
+    }
+    
+    .target-input-group {
+        grid-template-columns: 1fr !important;
+        gap: 15px;
+    }
+    
+    .target-input-group input {
+        font-size: 0.9em;
+        padding: 10px;
+    }
+}
